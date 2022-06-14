@@ -5,8 +5,9 @@ $acc = $_POST['account'];
 $nick = $_POST['nick'];
 $name = $_POST['name'];
 //密碼使用MD5轉碼
-$pw = $_POST['password'];
-$chk_pw = $_POST['chk_password'];
+//$pw=md5($_POST['pw']);
+$pw = md5($_POST['password']);
+$chk_pw = md5($_POST['chk_password']);
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 //驗證帳號沒有重複1重複0不重複
@@ -15,7 +16,6 @@ $chk_a = $pdo->query($chk_acc)->fetchColumn();
 //驗證信箱沒有重複1重複0不重複
 $chk_email = "SELECT count(*) FROM `users` WHERE `email`='$email';";
 $chk_e = $pdo->query($chk_email)->fetchColumn();
-//$pw=md5($_POST['pw']);
 if ($pw != $chk_pw) {
     header('location:register.php?error=確認密碼錯誤');
 }else if(empty($acc) || empty($nick) || empty($name) || empty($phone) || empty($email)){

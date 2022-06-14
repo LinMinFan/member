@@ -3,10 +3,10 @@
 //echo "開始確認帳號密碼";
 //連線資料庫
 include "./connect.php";
-//接收帳號密碼傳值
-$acc = $_POST['account'];
-$pw = $_POST['password'];
+//接收帳號密碼傳值註冊時密碼以md5轉碼登入時也要先轉碼
 //$pw = md5($_POST['password']);
+$acc = $_POST['account'];
+$pw = md5($_POST['password']);
 
 /* if($acc==資料表中的account && $pw==資料表中的password){
     //登入成功->會員中心

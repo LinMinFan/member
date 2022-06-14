@@ -13,8 +13,8 @@
                 <input class="name" type="text" placeholder="<?= $name; ?>" value="<?= $name; ?>" disabled>
                 <input class="name" type="text" name="name" value="<?= $name; ?>" hidden>
                 <!-- 可修改 -->
-                <h3 class="h3Tl">密碼:</h3>
-                <input class="password" type="password" name="password" value="<?= $pw; ?>">
+                <h3 class="h3Tl">變更密碼:</h3>
+                <input class="password" type="password" name="password">">
                 <h3 class="h3Tl">確認密碼:</h3>
                 <input class="chk_password" type="password" name="chk_password" placeholder="<?= (isset($_GET['error'])) ? $_GET['error'] : ''; ?>">
                 <!-- 可修改 -->

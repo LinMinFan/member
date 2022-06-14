@@ -25,8 +25,10 @@ $email = $user['email'];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>會員中心</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/edit.css">
     <link rel="stylesheet" href="./css/delete.css">
     <link rel="stylesheet" href="./css/member_center.css">
@@ -72,6 +74,11 @@ $email = $user['email'];
             }
             ?>
         </div>
+    </div>
+    <div class="footer">
+    <?php
+    include "./layout/footer.php";
+    ?>
     </div>
     <!-- <script src="./js/main.js"></script> -->
 </body>

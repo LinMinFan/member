@@ -4,8 +4,9 @@ include_once "connect.php";
 $acc = $_POST['account'];
 $nick = $_POST['nick'];
 //要比對的資料只有密碼與確認密碼，確認密碼一致就送出資料
-$pw = $_POST['password'];
-$chk_pw = $_POST['chk_password'];
+//密碼為md5轉碼,比對時確認密碼先轉碼比對或比對後轉碼都可以(不使用預設值不須再判斷密碼是否變更)
+$pw = md5($_POST['password']);
+$chk_pw = md5($_POST['chk_password']);
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 

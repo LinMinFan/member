@@ -23,6 +23,7 @@
 * <font color=#FF0000>帳號重覆</font>回到<u>會員註冊頁</u>並顯示<font color=#FF0000>此帳號已有人使用請變更帳號</font>
 * <font color=#FF0000>密碼與確認密碼不一致</font>回到<u>會員註冊頁</u>並顯示<font color=#FF0000>確認密碼錯誤</font>
 * <font color=#FF0000>信箱重覆</font>回到<u>會員註冊頁</u>並顯示<font color=#FF0000>此信箱已有人使用請變更信箱</font>
+* 輸入密碼以md5轉碼儲存於資料庫
 
 ### 忘記密碼頁
 * <font color=#FF0000>已註冊帳號</font>但<font color=#FF0000>密碼忘記</font>則在此頁填寫<font color=#FF0000>帳號</font>與<font color=#FF0000>信箱</font>重新設定密碼
