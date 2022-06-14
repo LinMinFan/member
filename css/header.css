@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 功能頁固定置頂 */
+.nav {
+    width: 100%;
+    height: 60px;
+    background: #5454549b;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+}
+.nav a:visited{
+    color: #dcdcdc;
+    font-weight: bold;
+}
+.nav a:link{
+    color: #dcdcdc;
+    font-weight: bold;
+}
+
+/* 回首頁 */
+.home {
+    position: relative;
+    height: 30px;
+    width: 10%;
+    line-height: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+/* 會員歡迎標語 */
+.wellcome {
+    height: 30px;
+    width: 77.5%;
+    line-height: 30px;
+    color: #dcdcdc;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 會員中心 */
+.navTxt {
+    height: 30px;
+    width: 7.5%;
+    line-height: 30px;
+}
+
+/* 會員登入 */
+.navBum {
+    height: 30px;
+    width: 5%;
+    line-height: 30px;
+}
+
+.navBum a input {
+    width: 40px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.navBum a input:hover {
+    background: #c9c9c9;
+    transform: scale(0.9);
+}
+/* 背景顏色 */
+.box {
+    display: flex;
+}
+
+.box .color {
+    position: absolute;
+    filter: blur(150px);
+}
+
+.box .color:nth-child(1) {
+    top: -250px;
+    width: 600px;
+    height: 600px;
+    background: #ff1bce;
+}
+
+.box .color:nth-child(2) {
+    bottom: -250px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background: #ffee53;
+}
+
+.box .color:nth-child(3) {
+    bottom: 50px;
+    right: 100px;
+    width: 600px;
+    height: 600px;
+    background: #53ddff;
+}
+/* 透明方塊動畫 */
+.card {
+    position: relative;
+}
+.card .square {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px #0000000c;
+    border: 1px solid #ffffff74;
+    border-right: 1px solid #ffffff21;
+    border-bottom: 1px solid #ffffff21;
+    background: #ffffff1b;
+    border-radius: 10px;
+    animation-name: active;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes active {
+
+    0%,
+    100% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+.card .square:nth-child(1) {
+    top: 50px;
+    right: 280px;
+    width: 100px;
+    height: 100px;
+}
+
+.card .square:nth-child(2) {
+    top: 150px;
+    left: 255px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+.card .square:nth-child(3) {
+    top: 460px;
+    right: 300px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.card .square:nth-child(4) {
+    top: 450px;
+    left: 325px;
+    width: 50px;
+    height: 50px;
+}
+
+.card .square:nth-child(5) {
+    top: 40px;
+    left: 445px;
+    width: 60px;
+    height: 60px;
+}

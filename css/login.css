@@ -1,0 +1,109 @@
+/* 會員登入區 */
+.cantainer {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: #ffffff1b;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px #0000000c;
+    border: 1px solid #ffffff74;
+    border-right: 1px solid #ffffff21;
+    border-bottom: 1px solid #ffffff21;
+    margin: 100px auto;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form h2 {
+    position: relative;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
+.form h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 110px;
+    height: 4px;
+    background: #ffffff;
+}
+
+.form .inputbox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .inputbox input {
+    width: 100%;
+    background: #ffffff41;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid #ffffff74;
+    border-right: 1px solid #ffffff21;
+    border-bottom: 1px solid #ffffff21;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000000;
+    box-shadow: 0 5px 15px #00000041;
+}
+
+.form .inputbox input::placeholder {
+    color: #000000;
+}
+
+.form .inputbox input[type="submit"] {
+    background: #ffffff;
+    max-width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form .inputbox input[type="submit"]:hover {
+    background: #848484;
+    color: #ffffff;
+}
+
+.forget {
+    margin-top: 5px;
+    width: 150px;
+}
+
+.left{
+    position: relative;
+    left: 5px;
+    padding: 10px 25px;
+}
+.right{
+    position: relative;
+    right: -60px;
+    padding: 10px 25px;
+}
+
+.forget a {
+    color: #848484;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.forget a:hover {
+    color: #a9a9a9;
+}
+
