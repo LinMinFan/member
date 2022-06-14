@@ -32,10 +32,9 @@ if (empty($useracc)) {
     //核對密碼
     header('location:login.php?error=密碼錯誤');
 } else {
-    //登入成功並使用暱稱設定session
+    //登入成功並使用帳號設定session
     $sql = "SELECT `nick` FROM `users` WHERE `account`='$acc'";
-    $nick = $pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
-    $_SESSION['user'] = $nick['nick'];
+    $_SESSION['user'] = $acc;
     header('location:member_center.php');
 }
 ?>

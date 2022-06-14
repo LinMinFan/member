@@ -1,37 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    overflow: hidden;
-}
-/* 標題 */
-.regform {
-    position: relative;
-    top: 0px;
-    width: 800px;
-    background: rgba(48, 48, 48, 0.667);
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    border-radius: 15px 15px 0 0;
-    letter-spacing: 10px;
-    margin: 0 auto;
-}
-
 /* 資料內容 */
 .container{
-    width: 800px;
-    margin: 0 auto;
+    width: 100%;
 }
-.main {
+.edit {
     position: relative;
     top: 0px;
-    width: 800px;
-    background: #00000069;
+    width: 100%;
 }
 
 /* 表單 */
@@ -39,59 +13,42 @@ form {
     padding: 10px;
 }
 
-/* 帳號區 */
-#account {
-    width: 100%;
-    height: 70px;
-}
-
 /* 標題 */
-.h2Tl {
+.h3Tl {
     margin-left: 25px;
-    margin-top: 20px;
+    margin-top: 15px;
     width: 125px;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-/* 帳號 */
+/* 輸入帳號 */
 .account {
     position: relative;
     left: 100px;
-    top: -26px;
+    top: -24px;
     line-height: 25px;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
 }
-
 /* 輸入暱稱 */
 .nick {
     position: relative;
-    left: 480px;
-    top: -56px;
+    left: 100px;
+    top: -24px;
     line-height: 25px;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-}
-
-/* 暱稱標題 */
-.nickLb {
-    position: relative;
-    left: 160px;
-    top: -54px;
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: bold;
 }
 
 /* 姓名 */
 .name {
     position: relative;
     left: 100px;
-    top: -26px;
+    top: -24px;
     line-height: 25px;
     border-radius: 6px;
     padding: 0 22px;
@@ -102,7 +59,7 @@ form {
 .password {
     position: relative;
     left: 100px;
-    top: -26px;
+    top: -24px;
     line-height: 25px;
     border-radius: 6px;
     padding: 0 22px;
@@ -113,7 +70,7 @@ form {
 .chk_password {
     position: relative;
     left: 100px;
-    top: -26px;
+    top: -24px;
     line-height: 25px;
     border-radius: 6px;
     padding: 0 22px;
@@ -124,7 +81,7 @@ form {
 .phone {
     position: relative;
     left: 100px;
-    top: -26px;
+    top: -24px;
     line-height: 25px;
     border-radius: 6px;
     padding: 0 22px;
@@ -135,27 +92,28 @@ form {
 .email {
     position: relative;
     left: 100px;
-    top: -26px;
+    top: -24px;
     line-height: 25px;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    width: 625px;
 }
 
 /* 編輯 */
+.input{
+    display: flex;
+    justify-content: center
+}
 input[type="submit"] {
     position: relative;
     width: 50px;
     height: 25px;
-    left: -330px;
-    top: 15px;
     border-radius: 3px;
     border: 1px solid #000000;
     cursor: pointer;
-    margin-bottom: 20px;
     background: #9effdf;
     font-weight: bold;
+    margin: 0 10px;
 }
 
 input[type="submit"]:hover {
@@ -168,14 +126,12 @@ input[type="reset"] {
     position: relative;
     width: 50px;
     height: 25px;
-    left: -270px;
-    top: 15px;
     border-radius: 3px;
     border: 1px solid #000000;
     cursor: pointer;
-    margin-bottom: 20px;
     background: #9effdf;
     font-weight: bold;
+    margin: 0 10px;
 }
 
 input[type="reset"]:hover {

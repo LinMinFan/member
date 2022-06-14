@@ -5,7 +5,7 @@
         </div>
         <div class="wellcome">
             <!-- 會員中心登入，顯示暱稱在nav欄位若無登入導回登入頁 -->
-            <span><?= $_SESSION['user']; ?>歡迎回來</span>"
+            <span><?= $nick; ?>歡迎回來</span>
         </div>
         <div class="navTxt">
             <a href="./member_center.php">會員中心</a>
