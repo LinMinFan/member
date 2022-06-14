@@ -4,8 +4,13 @@
 <?php
 //使用js功能彈跳視窗
 if (isset($_GET['confirm'])) {
-    echo "<script> if(confirm( '確定刪除？ '))  location.href='./remove_acc.php?account={$account}';else location.href='./member_center.php?delete=activ'; </script>"; 
-    
-}
+    echo "<script>
+    if (confirm('確定刪除？')) {
+        location.href='./remove_acc.php?account={$account}';
+    }else{
+        location.href='./member_center.php?delete=activ';
+    }
+    </script>";
+    }
 
 ?>
