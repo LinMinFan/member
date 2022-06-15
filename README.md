@@ -57,13 +57,14 @@
 * <font color=#FF0000>密碼與確認密碼不一致</font>回到<u>編輯會員頁</u>並顯示<font color=#FF0000>確認密碼錯誤</font>
 
 ### 會員表單資料
+* 密碼使用md5存入長度需32
 |名稱|類型|屬性|預設值|額外資訊|備註|
 |--|--|--|--|--|--|
 |id|int(10)|UNSIGNED|無|AI|會員編號|
 |account|varchar(12)|--|無|--|帳號|
 |nick|varchar(12)|--|無|--|暱稱|
 |name|varchar(30)|--|無|--|姓名|
-|password|varchar(12)|--|無|--|密碼|
+|password|varchar(32)|--|無|--|密碼|
 |phone|varchar(14)|--|無|--|電話|
 |email|varchar(64)|--|無|--|電子信箱|
 
