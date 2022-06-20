@@ -17,8 +17,10 @@ $pw = md5($_POST['password']);
 }
  */
 
-$chk_acc = "SELECT count(*) FROM `member_users` WHERE `account`='$acc'";
-$chk_pw = "SELECT count(*) FROM `member_users` WHERE`password`='$pw'";
+//$chk_acc = "SELECT count(*) FROM `member_users` WHERE `account`='$acc'";
+$chk_acc = "SELECT count(*) FROM `users` WHERE `account`='$acc'";
+//$chk_pw = "SELECT count(*) FROM `member_users` WHERE`password`='$pw'";
+$chk_pw = "SELECT count(*) FROM `users` WHERE`password`='$pw'";
 
 $useracc = $pdo->query($chk_acc)->fetchColumn();
 $userpw = $pdo->query($chk_pw)->fetchColumn();
@@ -33,7 +35,8 @@ if (empty($useracc)) {
     header('location:login.php?error=密碼錯誤');
 } else {
     //登入成功並使用帳號設定session
-    $sql = "SELECT `nick` FROM `member_users` WHERE `account`='$acc'";
+    //$sql = "SELECT `nick` FROM `member_users` WHERE `account`='$acc'";
+    $sql = "SELECT `nick` FROM `users` WHERE `account`='$acc'";
     $_SESSION['user'] = $acc;
     header('location:member_center.php');
 }
