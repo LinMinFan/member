@@ -4,10 +4,10 @@ session_start();
 if (!isset($_SESSION['user'])) {
     header('location:./login.php');
 }
-$dsn = "mysql:host=localhost;charset=utf8;dbname=member";
+$dsn = "mysql:host=localhost;charset=utf8;dbname=s1110204";
 $pdo = new PDO($dsn, 'root', '');
 //抓取會員資料並顯示於會員中心首頁
-$sql = "select * from `users` where account = '{$_SESSION['user']}'";
+$sql = "select * from `member_users` where account = '{$_SESSION['user']}'";
 $user = $pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
 $id = $user['id'];
 $account = $user['account'];

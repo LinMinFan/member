@@ -11,7 +11,7 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 
 if($pw == $chk_pw){
-    $sql="UPDATE `users` SET `nick`='$nick',`password`='$pw',`phone`='$phone' WHERE `account`='$acc';";
+    $sql="UPDATE `member_users` SET `nick`='$nick',`password`='$pw',`phone`='$phone' WHERE `account`='$acc';";
     $pdo->exec($sql);
     header("location:member_center.php");
 }else{
